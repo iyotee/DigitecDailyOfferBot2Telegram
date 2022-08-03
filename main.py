@@ -85,5 +85,5 @@ with open('out.txt', 'w') as f:
 article = buildArticle(buildURL(productID))
 #print
 print("Title: " + article.title + "\n" + "Price: " + article.price + "\n" + "Price before: " + article.pricebefore + "\n" + "Details: " + article.details + "\n" + "Left pieces: " + article.leftpieces + "\n" + "URL: " + buildURL(productID))
-bot.send_message(chat_id=user_id, text="Title: " + article.title + "\n" + "Price: " + article.price + "\n" + "Price before: " + article.pricebefore + "\n" + "Details: " + article.details + "\n" + "Left pieces: " + article.leftpieces + "\n" + "URL: " + buildURL(productID))
+bot.send_message(chat_id=user_id, text="📣\t Digitec daily offer \t📣" + "\n\n" + "Article: " + article.title + "\n" + "Price: " + article.price + "\n" + "Price before: " + article.pricebefore + "\n" + "Details: " + article.details + "\n" + "Left pieces: " + article.leftpieces + "\n" + "URL: " + buildURL(productID))
     
