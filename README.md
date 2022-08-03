@@ -101,14 +101,14 @@ python3 pip install bs4 -y
 
 ## Usage
 
-you can create a cron task every hour ( 0 * * * * ) 
+you can create a cron task every night at 00:00 ( 0 0 * * * ) 
 
 ```sh
 crontab -e
 ```
 edit the end of the files by appending :
 ```sh
-0 * * * * python3 DigitecDailyOfferBot2Telegram/main.py
+0 0 * * * python3 DigitecDailyOfferBot2Telegram/main.py
 ```
 
 Save and exit with ctrl+x and that's it ! Your bot is now running and sending your message on your Telegram user every hour ! 🎊
