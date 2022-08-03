@@ -1,22 +1,22 @@
 <p align="center">
-  <a href="https://github.com/Iyotee/DigitecPriceNAvailabilityBot">
+  <a href="https://github.com/Iyotee/DigitecDailyOfferBot2Telegram">
     <img src="images/logo.svg" alt="Logo" width="669" height="335">
   </a>
 
   <h3 align="center">DigitecPriceBot2Telegram</h3>
 
   <p align="center">
-    A simple python script to crawl the Switzerland companies both Digitec and Galaxus AG websites products list
+    A simple python script to crawl the Digitec AG daily offer product
     <br/>
     <br/>
-    <a href="https://github.com/Iyotee/DigitecPriceNAvailabilityBot"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Iyotee/DigitecDailyOfferBot2Telegram"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/Iyotee/DigitecPriceNAvailabilityBot">View Demo</a>
+    <a href="https://github.com/Iyotee/DigitecDailyOfferBot2Telegram">View Demo</a>
     .
-    <a href="https://github.com/Iyotee/DigitecPriceNAvailabilityBot/issues">Report Bug</a>
+    <a href="https://github.com/Iyotee/DigitecDailyOfferBot2Telegram/issues">Report Bug</a>
     .
-    <a href="https://github.com/Iyotee/DigitecPriceNAvailabilityBot/issues">Request Feature</a>
+    <a href="https://github.com/Iyotee/DigitecDailyOfferBot2Telegram/issues">Request Feature</a>
   </p>
 </p>
 
@@ -40,7 +40,7 @@
 ## About The Project
 
 
-A simple python script to crawl the Switzerland companies both websites Digitec and Galaxus AG products list
+A simple python script to crawl the Digitec AG daily offer product and return the result to a Telegram user
 
 ![Screen Shot](images/screenshot.png)
 
@@ -79,7 +79,7 @@ sudo apt-get install python3-pip -y
 2. Clone the repo
 
 ```sh
-git clone https://github.com/iyotee/DigitecPriceNAvailabilityBot.git
+git clone https://github.com/iyotee/DigitecDailyOfferBot2Telegram.git
 ```
 
 3. Install pip packages
@@ -108,7 +108,7 @@ crontab -e
 ```
 edit the end of the files by appending :
 ```sh
-0 * * * * python3 DigitecPriceNAvailabilityBot/main.py
+0 * * * * python3 DigitecDailyOfferBot2Telegram/main.py
 ```
 
 Save and exit with ctrl+x and that's it ! Your bot is now running and sending your message on your Telegram user every hour ! 🎊
@@ -116,15 +116,15 @@ Save and exit with ctrl+x and that's it ! Your bot is now running and sending yo
 
 ## Roadmap
 
-See the [open issues](https://github.com/Iyotee/DigitecPriceNAvailabilityBot/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Iyotee/DigitecDailyOfferBot2Telegram/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Iyotee/DigitecPriceNAvailabilityBot/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
+* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Iyotee/DigitecDailyOfferBot2Telegram/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/Iyotee/DigitecPriceNAvailabilityBot/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+* Please also read through the [Code Of Conduct](https://github.com/Iyotee/DigitecDailyOfferBot2Telegram/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Creating A Pull Request
 
@@ -136,7 +136,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Iyotee/DigitecPriceNAvailabilityBot/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/Iyotee/DigitecDailyOfferBot2Telegram/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
