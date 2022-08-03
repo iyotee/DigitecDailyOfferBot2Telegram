@@ -1,0 +1,1 @@
+<__main__.Article object at 0x7fb09eea00>
