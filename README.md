@@ -111,7 +111,7 @@ edit the end of the files by appending :
 0 0 * * * python3 DigitecDailyOfferBot2Telegram/main.py
 ```
 
-Save and exit with ctrl+x and that's it ! Your bot is now running and sending your message on your Telegram user every hour ! 🎊
+Save and exit with ctrl+x and that's it ! Your bot is now running and sending your message on your Telegram user every day at 00:00 ! 🎊
 
 
 ## Roadmap
