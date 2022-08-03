@@ -3,7 +3,7 @@
     <img src="images/logo.svg" alt="Logo" width="669" height="335">
   </a>
 
-  <h3 align="center">DigitecPriceBot2Telegram</h3>
+  <h3 align="center">DigitecDailyOfferBot2Telegram</h3>
 
   <p align="center">
     A simple python script to crawl the Digitec AG daily offer product
