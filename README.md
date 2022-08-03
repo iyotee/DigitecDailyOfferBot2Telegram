@@ -42,7 +42,7 @@
 
 A simple python script to crawl the Digitec AG daily offer product and return the result to a Telegram user
 
-![Screen Shot](images/screenshot.png)
+![Screen Shot](images/screenshot2.png)
 
 Here's why:
 
