@@ -18,7 +18,6 @@ class Article:
         self.details = details
         self.leftpieces = leftpieces
 
-        
 def getProductDetailFromURL(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
@@ -54,7 +53,7 @@ def getPriceBefore(productDetail):
     return ppricebefore
 
 def getDetails(productDetail):
-    details = productDetail.find('span', class_='bQOaJl').getText()
+    details = productDetail.find('span', class_='fYwkNp').getText()
     return details
 
 def buildURL(url):
@@ -77,13 +76,20 @@ def buildArticle(url):
     
     return Article(title, price, pricebefore, details, leftpieces)
 
-# print(products) in a local file named out.txt -> The file is opened in "w" mode, which means that it will be created if it does not exist and will be overwritten if it does exist. If the file exists, it will be overwritten. If the file does not exist, it will be created.
-with open('out.txt', 'w') as f:
-    f.write(str(buildArticle(buildURL(productID))))
-    f.close()
-
 article = buildArticle(buildURL(productID))
-#print
+
+# print(products) in a local file named out.txt -> The file is opened in "a+" mode (append and read/write) and the file is created if it does not exist. If the file exists, it is opened in append mode. The file pointer is positioned at the end of the file. This is the default mode.
+with open('out.txt', 'a+') as f:
+    print(article.title, file=f)
+    print(article.price, file=f)
+    print(article.pricebefore, file=f)
+    print(article.details, file=f)
+    print(article.leftpieces, file=f)
+    print('####################', file=f)
+    
+#print in the console the content of the file
 print("Title: " + article.title + "\n" + "Price: " + article.price + "\n" + "Price before: " + article.pricebefore + "\n" + "Details: " + article.details + "\n" + "Left pieces: " + article.leftpieces + "\n" + "URL: " + buildURL(productID))
+
+#send the message to the user with the bot API and the user ID (the user ID is the same as the Telegram ID) and the message (the message is the content of the file out.txt) and the parse_mode is set to HTML to allow the bot to send the message in HTML format (the message is in HTML format) and the disable_web_page_preview is set to True to disable the preview of the web page (the preview is disabled) and the disable_notification is set to True to disable the notification of the message (the notification is disabled) 
 bot.send_message(chat_id=user_id, text="📣\t Digitec daily offer \t📣" + "\n\n" + "Article: " + article.title + "\n" + "Price: " + article.price + "\n" + "Price before: " + article.pricebefore + "\n" + "Details: " + article.details + "\n" + "Left pieces: " + article.leftpieces + "\n" + "URL: " + buildURL(productID))
     
